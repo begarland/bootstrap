@@ -144,8 +144,8 @@
     "rtlcss": "^3.5.0",
     "sass": "^1.43.4",
     "shelljs": "^0.8.4",
-    "stylelint": "^13.13.1",
-    "stylelint-config-twbs-bootstrap": "^2.2.4",
+    "stylelint": "^14.1.0",
+    "stylelint-config-twbs-bootstrap": "github:fgblomqvist/stylelint-config-twbs-bootstrap#feature/upgrade-to-stylelint-14",
     "terser": "^5.10.0",
     "vnu-jar": "21.10.12"
   },
