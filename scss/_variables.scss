@@ -6,7 +6,7 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
+$white:    #f9fbfd !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -49,6 +49,10 @@ $cyan:    #0dcaf0 !default;
 
 $theme-primary:  #3e65b6 !default;
 $theme-dark:  #11161f !default;
+$theme-light:  #f2f4f7 !default;
+$light-bg: #ebf4fa !default;
+$light-blue: #96a2ba !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -76,7 +80,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $light-bg !default;
 $dark:          $theme-dark !default;
 // scss-docs-end theme-color-variables
 
@@ -349,7 +353,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -399,7 +403,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $theme-light !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -557,7 +561,7 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
-$font-weight-base:            $font-weight-normal !default;
+$font-weight-base:            $font-weight-bold !default;
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
@@ -613,7 +617,7 @@ $small-font-size:             .875em !default;
 
 $sub-sup-font-size:           .75em !default;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  $light-blue !default;
 
 $initialism-font-size:        $small-font-size !default;
 
@@ -648,6 +652,8 @@ $mark-bg:                     #fcf8e3 !default;
 // Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
+$table-blue-bg: #ebf4fa !default;
+$table-light-bg: #f9fbfd !default;
 
 // scss-docs-start table-variables
 $table-cell-padding-y:        .5rem !default;
@@ -658,14 +664,14 @@ $table-cell-padding-x-sm:     .25rem !default;
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 $body-color !default;
-$table-bg:                    transparent !default;
+$table-bg:                    $table-light-bg !default;
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
 
 $table-striped-color:         $table-color !default;
 $table-striped-bg-factor:     .05 !default;
-$table-striped-bg:          #ebf4fa !default;
+$table-striped-bg:            $table-blue-bg !default;
 
 $table-active-color:          $table-color !default;
 $table-active-bg-factor:      .1 !default;
@@ -1227,8 +1233,8 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       $white !default;
-$card-cap-color:                    null !default;
+$card-cap-bg:                       transparent !default;
+$card-cap-color:                    $theme-primary !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
 $card-bg:                           $white !default;
