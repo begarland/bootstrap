@@ -8,8 +8,8 @@
   display: block;
   color: $pagination-color;
   text-decoration: if($link-decoration == none, null, none);
-  background-color: $pagination-bg;
-  border: $pagination-border-width solid $pagination-border-color;
+  // background-color: $pagination-bg;
+  // border: $pagination-border-width solid $pagination-border-color;
   @include transition($pagination-transition);
 
   &:hover {
@@ -37,8 +37,10 @@
   &.active .page-link {
     z-index: 3;
     color: $pagination-active-color;
-    @include gradient-bg($pagination-active-bg);
+    // @include gradient-bg($pagination-active-bg);
     border-color: $pagination-active-border-color;
+    border-bottom: $pagination-border-width solid $pagination-border-color;
+
   }
 
   &.disabled .page-link {
