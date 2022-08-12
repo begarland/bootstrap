@@ -50,7 +50,7 @@ $cyan:    #0dcaf0 !default;
 
 // scss-docs-start fm-theme-colors
 $theme-primary:  #3e65b6 !default;
-$theme-dark:  #11161f !default;
+$theme-dark:  #232c3b !default;
 $theme-light:  #f2f4f7 !default;
 // scss-docs-end fm-theme-colors
 
@@ -402,7 +402,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $theme-light !default;
+$body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
