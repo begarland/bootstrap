@@ -8,12 +8,18 @@
 // scss-docs-start import-stack
 // Configuration
 @import "functions";
+@import "dark/functions";
 @import "variables";
+@import "variables-alt";
 @import "maps";
 @import "mixins";
+@import "dark/mixins";
 @import "utilities";
+@import "dark/utilities";
+@import "dark/patch";
 
 // Layout & components
+@import "dark/color-scheme";
 @import "root";
 @import "reboot";
 @import "type";
@@ -52,3 +58,55 @@
 // Utilities
 @import "utilities/api";
 // scss-docs-end import-stack
+
+/*
+ * ---------- Dark Mode ------------------------------------------------------
+ */
+
+@include color-scheme-alt(alternative-color-scheme($default-color-scheme)) {
+
+  // Layout & components
+  @import "dark/root";
+  @import "dark/reboot";
+  @import "dark/type";
+  @import "dark/images";
+  // no colors in containers
+  // no colors in grid
+  @import "dark/tables";
+  @import "dark/forms";
+  @import "dark/buttons";
+  // no colors in transitions
+  @import "dark/dropdown";
+  @import "dark/button-group";
+  @import "dark/nav";
+  @import "dark/navbar";
+  @import "dark/card";
+  @import "dark/accordion";
+  @import "dark/breadcrumb";
+  @import "dark/pagination";
+  @import "dark/badge";
+  @import "dark/alert";
+  @import "dark/progress";
+  @import "dark/list-group";
+  @import "dark/close";
+  @import "dark/toasts";
+  @import "dark/modal";
+  @import "dark/tooltip";
+  @import "dark/popover";
+  @import "dark/carousel";
+  // no colors in spinners
+  @import "dark/offcanvas";
+  @import "dark/placeholders";
+
+  // Helpers
+  @import "dark/helpers";
+
+  // Utilities
+  @import "dark/utilities/api";
+
+  // Unique to dark-mode
+  @import "dark/dark";
+}
+
+// Additional Global Utilities
+@import "dark/utilities/api-all";
